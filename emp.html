@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> employee </title>
+	<style>
+		body{
+			background-color: #f6f6ff;
+			font-family: Calibri,Myraid;
+		}
+		#main{
+			width: 780px;
+			padding: 20px;
+			margin: auto;
+		}
+		table.timecard{
+          margin: auto;
+          width: 600px;
+          border-collapse: collapse;
+          border: 1px solid#fff;
+          border-style: hidden;
+		}
+		table.timecard caption{
+			background-color: #f79646;
+			color: #fff;
+			font-size: x-large;
+			font-weight: bold;
+			letter-spacing: .3em;
+		}
+		table.timecard thread th{
+			padding: 8px;
+			background-color: #fde9d9;
+			font-size: large;
+		}
+		table.timecard thread th#thDay{
+			width: 40%;
+		}
+		table.timecard thread th#thRegular,
+		table.timecard thread th#thOvertime,
+		table.timecard thread th#thTotal{
+			width:20%;
+		}
+		table.timecard th,table.timecard td{
+			padding: 3px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #f79646 #ccc;
+		}
+		table.timecard td{
+			text-align: right;
+		}
+		table.timecard tbody th{
+			text-align: left;
+			font-weight: normal;
+		}
+		table.timecard tfoot{
+			font-weight: bold;
+			font-size: large;
+			background-color: #687886;
+			color: #fff;
+		}
+		table.timecard tr.even{
+			background-color: #fde9d9;
+		}
+
+	</style>
+</head>
+<body>
+     <div id="main">
+     	<table class="timecard">
+     		<caption> Employee Timecard</caption>
+     		<thead>
+     			<tr>
+     				<th id="thDay">day</th>
+     				<th id="thRegular">Regular</th>
+     				<th id="thOvertime">Overtime</th>
+     				<th id="thTotal">Total</th>
+     			</tr>
+     		</thead>
+     		<tbody>
+     			<tr class="odd">
+     				<th> Monday</th>
+     				<td>8</td>
+     				<td>0</td>
+     				<td>8</td>
+     			</tr>
+     			<tr class="even">
+     				<th>Tuesday</th>
+     				<td>8</td>
+     				<td>2.5</td>
+     				<td>10.5</td>
+     			</tr>
+     			<tr class="odd">
+     				<th> Wednesday</th>
+     				<td>8</td>
+     				<td>0</td>
+     				<td>8</td>
+     			</tr>
+     			<tr class="even">
+     				<th> Thursday</th>
+     				<td>8</td>
+     				<td>0</td>
+     				<td>8</td>
+     			</tr>
+     			<tr class="odd">
+     				<th> Friday</th>
+     				<td>8</td>
+     				<td>0</td>
+     				<td>8</td>
+     			</tr>
+     			<tr class="even">
+     				<th> Saturday</th>
+     				<td>0</td>
+     				<td>5</td>
+     				<td>5</td>
+     			</tr>
+     			<tr class="even">
+     				<th> Sunday</th>
+     				<td>0</td>
+     				<td>1</td>
+     				<td>1</td>
+     			</tr>
+     		</tbody>
+     		<tfoot>
+     			<tr><th>Total weekly hours:</th>
+     				<td>40</td>
+     				<td>8.5</td>
+     				<td>48.5</td>
+     				</tr>
+     		</tfoot>
+     	</table>
+</body>
+</html>
