@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> aaa </title>
+</head>
+<body>
+     <div id="main">
+     	<table class="aaa" id="myt" width="="450px>
+     		<tr><td>AAA</td></tr>
+     		<tr><td>AAA</td></tr>
+     		<tr><td>AAA</td></tr>
+     	</table>
+     	<hr id="line">
+     	<table width="235px">
+     		<tr>
+     			<td><button id="abv" style="width: 104px" onclick="abv()">add row above</button></td>
+                <td><button id="blw" style="width: 104px" onclick="blw()">add row below</button></td>
+     		</tr>
+     		<tr>
+     			<td><button id="bdr" style="width: 104px" onclick="bdr()">add border</button></td>
+                <td><button id="clr" onclick="clr()">change text color</button></td>
+     		</tr>
+     		<tr>
+     			<td><button id="rmv" style="width: 104px" onclick="rmv()">remove row </button></td>
+                <td><button id="all" style="width: 104px" onclick="all()">remove all</button></td>
+     		</tr>
+     	</table>
+     	<script>
+     		function abv(){
+     			var table=document.getElementById("myt");
+     			var row=table.insertRow(0);
+     			row.innerHTML="BBB";
+     		}
+     		function blw(){
+     			var table=document.getElementById("myt");
+     			var row=table.insertRow(-1);
+     			row.innerHTML="CCC";
+     		}
+     		function bdr(){
+     			document.getElementById("myt").style.border="solid red";
+     		}
+     		function clr(){
+     			document.getElementById("myt").style.color="green";     			
+     		}
+     		function rmv(){
+     			document.getElementById("myt").deleteRow(-1);     			
+     		}
+     		function all(){
+     			var myt=document.getElementById("myt");
+     			var rowCount=myt.Rows.length;
+     			for(var i=rowCount-1;i>-1;i--){
+                      myt.deleteRow(i);
+     			}
+     			
+     		}
+     	</script>
+     </div>
+</body>
+</html>
