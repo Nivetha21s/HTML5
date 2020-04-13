@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Date </title>
+	<script type="text/javascript">
+		function hiday(){
+			var d= new Date();
+			alert(d);
+			document.getElementById('disp').innerHTML=d.toLocaleString();
+			document.getElementById('disp').style.backgroundColor='red';
+			document.getElementById('disp').style.color='black';
+			document.getElementById('disp').style.textAlign='center';
+			document.getElementById('disp').style.fontSize='50px';
+			var aweek=d.getDate()+5;
+			var d1=new Date(d.setData(aweek));
+			if(new Date().getTime() < new Date(d1).getTime()){
+				document.getElementById('disp').innerHTML=d1.toLocaleString();
+				document.getElementById('disp').style.backgroundColor='red';
+				document.getElementById('disp').style.color='white';
+				document.getElementById('disp').style.textAlign='center';
+				document.getElementById('disp').style.fontSize='50px';
+			}
+		}
+	</script>
+</head>
+<body onload="hiday()">
+	<h2 align="center"> WELCOME MY FRIENDS </h2>
+	<div id="disp"></div>
+
+</body>
+</html>
