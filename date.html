@@ -12,13 +12,13 @@
 			document.getElementById('disp').style.textAlign='center';
 			document.getElementById('disp').style.fontSize='50px';
 			var aweek=d.getDate()+5;
-			var d1=new Date(d.setData(aweek));
+			var d1=new Date(d.setDate(aweek));
 			if(new Date().getTime() < new Date(d1).getTime()){
-				document.getElementById('disp').innerHTML=d1.toLocaleString();
-				document.getElementById('disp').style.backgroundColor='red';
-				document.getElementById('disp').style.color='white';
-				document.getElementById('disp').style.textAlign='center';
-				document.getElementById('disp').style.fontSize='50px';
+				document.getElementById('display').innerHTML=d1.toLocaleString();
+				document.getElementById('display').style.backgroundColor='red';
+				document.getElementById('display').style.color='white';
+				document.getElementById('display').style.textAlign='center';
+				document.getElementById('display').style.fontSize='50px';
 			}
 		}
 	</script>
@@ -26,6 +26,7 @@
 <body onload="hiday()">
 	<h2 align="center"> WELCOME MY FRIENDS </h2>
 	<div id="disp"></div>
+	<div id="display"></div>
 
 </body>
 </html>
